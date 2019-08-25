@@ -1,1 +1,70 @@
 
+:root {
+    --mid-taupe: #d5b990;
+    --light-taupe: #ecd7b8;
+    --charcoal: #353535;
+    --ruby: #b74232;
+    --dark-ruby: #802e23;
+
+    --body-font: 'Fauna One', serif;
+    --title-font: 'Cinzel', serif;
+}
+
+h1 {
+    font-family: var(--title-font);
+    color: var(--charcoal);
+}
+
+hr {
+    color: var(--mid-taupe);
+}
+
+.jumbotron {
+    background-color: var(--light-taupe);
+    max-width: 70vw;
+    margin: 2rem auto;
+    
+}
+
+.jumbotron p {
+    font-family: var(--body-font);
+}
+
+.btn {
+    background-color: var(--ruby);
+    border-color: var(--dark-ruby);
+}
+
+.btn:hover {
+    background-color: var(--dark-ruby);
+    border-color: var(--dark-ruby);
+}
+
+.survey-container{
+    background-color: var(--light-taupe);
+    margin-top: 2rem;
+    padding: 1.5rem;
+    font-family: var(--title-font);
+}
+
+.survey-container h4{
+    font-family: var(--body-font);
+    margin-bottom: 2rem;
+}
+
+.survey-container h5 {
+    font-family: var(--body-font);
+}
+
+.about-container h5 {
+    font-family: var(--body-font);
+}
+
+.about-container {
+    margin-bottom: 2rem;
+}
+
+.chosen-select {
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+}

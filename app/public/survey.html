@@ -5,8 +5,8 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <meta http-equiv='X-UA-Compatible' content='ie=edge'>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- <link rel='stylesheet' href='//fonts.googleapis.com/css?family=font1|font2|etc' type='text/css'>
-    <link rel='stylesheet' href='assets/css/styles.css' type='text/css'> -->
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Fauna+One&display=swap" rel="stylesheet">
+    <link  rel="stylesheet" href='/css/styles.css' type='text/css'>
     <title>Gaming Buddies - Survey</title>
 </head>
 <body>
@@ -33,15 +33,16 @@
 </div>
 
 
-<div class="container">
-    <h3>About You</h3>
-    <h5>Name (required)</h5>
-    <input type="text" id="name" class="form-control" required="">
-    <h5>Link to Avatar Photo (required)</h5>
-    <input type="text" id="photo" class="form-control" required="">
-</div>
-<br>
-<div class="container">
+
+<div class="container survey-container">
+        <div class="container about-container">
+                <h3>About You</h3>
+                <h5>Name (required)</h5>
+                <input type="text" id="name" class="form-control" required="">
+                <h5>Link to Avatar Photo (required)</h5>
+                <input type="text" id="photo" class="form-control" required="">
+            </div>
+            
     <h3>Gaming Preferences Survey</h3>
     <h4>Please fill in all questions below. When you've finished, we will calculate which person is the best gaming buddy for you, based off of mutual preferences.</h4>
     <div class="container" id="question1Container">
@@ -154,7 +155,7 @@
     </div>
 
     <div class="container" id="question10Container">
-        <h5 class="question">Question 10: I want to playfames that have lots of complexity and strategic depth.</h5>
+        <h5 class="question">Question 10: I want to play games that have lots of complexity and strategic depth.</h5>
         <select class="chosen-select" id="q10">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
