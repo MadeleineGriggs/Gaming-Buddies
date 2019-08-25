@@ -9,8 +9,11 @@ app.get("/api/friends", function(req, res) {
 
   app.post("/api/friends", function(req, res) {
 
-      friendsData.push(req.body);
+    var userInput = req.body;
 
+    userAnswers = userInput.scores;
+
+    friendsData.push(userInput);
   });
 
 };

@@ -1,6 +1,6 @@
-{
+var friendsData = {
     "name":"Ahmed",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "photo":"https://api.adorable.io/avatars/285/abott@adorable.io.png",
     "scores":[
         5,
         1,
@@ -14,4 +14,6 @@
         1
       ]
   }
+
+  module.exports = friendsData;
   

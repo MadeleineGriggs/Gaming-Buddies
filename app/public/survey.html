@@ -11,179 +11,198 @@
 </head>
 <body>
 
-
 <div class="container">
+    <h3>About You</h3>
+    <h5>Name (required)</h5>
+    <input type="text" id="name" class="form-control" required="">
+    <h5>Link to Avatar Photo (required)</h5>
+    <input type="text" id="photo" class="form-control" required="">
+</div>
+<br>
+<div class="container">
+    <h3>Gaming Preferences Survey</h3>
+    <h4>Please fill in all questions below. When you've finished, we will calculate which person is the best gaming buddy for you, based off of mutual preferences.</h4>
     <div class="container" id="question1Container">
-        <h3 class="question">Question 1: I want to play a game that has simple rules and is easy to pick up quickly.</h3>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="q1Radio" id="q1Opt1" value="option1">
-            <label class="form-check-label" for="q1Opt1">
-            1 - I like complex games!
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="q1Radio" id="q1Opt2" value="option2">
-            <label class="form-check-label" for="q1Opt2">
-            2
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="q1Radio" id="q1Opt3" value="option3">
-            <label class="form-check-label" for="q1Opt3">
-            3
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="q1Radio" id="q1Opt4" value="option4">
-            <label class="form-check-label" for="q1Opt4">
-            4
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="q1Radio" id="q1Opt5" value="option5">
-            <label class="form-check-label" for="q1Opt5">
-            5 - Keep it simple!
-            </label>
-        </div>
+        <h5 class="question">Question 1: I like games that have simple rules and are easy to pick up quickly.</h5>
+        <select class="chosen-select" id="q1">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
     </div>
 
     <div class="container" id="question2Container">
-        <h3 class="question">Question 2: What typical duration would you like for a game?</h3>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="q2Radio" id="q2Opt1" value="option1">
-            <label class="form-check-label" for="q2Opt1">
-            1 - 30 mins
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="q2Radio" id="q2Opt2" value="option2">
-            <label class="form-check-label" for="q2Opt2">
-            2 - 30 mins to 1 hr
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="q2Radio" id="q2Opt3" value="option3">
-            <label class="form-check-label" for="q2Opt3">
-            3 - 1-2 hrs
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="q2Radio" id="q2Opt4" value="option4">
-            <label class="form-check-label" for="q2Opt4">
-            4 - 2 hrs - 3 hrs
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="q2Radio" id="q2Opt5" value="option5">
-            <label class="form-check-label" for="q2Opt5">
-            5 - 3 hrs +
-            </label>
-        </div>
+        <h5 class="question">Question 2: What typical duration would you like for a game?</h5>
+        <select class="chosen-select" id="q2">
+            <option value=""></option>
+            <option value="1">1 (30 mins or less)</option>
+            <option value="2">2 (30 mins - 1 hr)</option>
+            <option value="3">3 (1-2 hr)</option>
+            <option value="4">4 (2-3 hr)</option>
+            <option value="5">5 (3 + hrs)</option>
+          </select>
     </div>
 
 
     <div class="container" id="question3Container">
-        <h3 class="question">Question 3: How important is having a game board and components that are well illustration and made?</h3>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="q3Radio" id="q3Opt1" value="option1">
-            <label class="form-check-label" for="q3Opt1">
-            1 - Not important
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="q3Radio" id="q3Opt2" value="option2">
-            <label class="form-check-label" for="q3Opt2">
-            2
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="q3Radio" id="q3Opt3" value="option3">
-            <label class="form-check-label" for="q3Opt3">
-            3
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="q3Radio" id="q3Opt4" value="option4">
-            <label class="form-check-label" for="q3Opt4">
-            4
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="q3Radio" id="q3Opt5" value="option5">
-            <label class="form-check-label" for="q3Opt5">
-            5 - Very Important
-            </label>
-        </div>
+        <h5 class="question">Question 3: How important is having a game board and components that are well illustration and made?</h5>
+        <select class="chosen-select" id="q3">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
     </div>
 
     <div class="container" id="question4Container">
-            <h3 class="question">Question 4: I like a game where I can beat the other players.</h3>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="q4Radio" id="q4Opt1" value="option1">
-                <label class="form-check-label" for="q4Opt1">
-                1 - Not important
-                </label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="q4Radio" id="q4Opt2" value="option2">
-                <label class="form-check-label" for="q4Opt2">
-                2
-                </label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="q4Radio" id="q4Opt3" value="option3">
-                <label class="form-check-label" for="q4Opt3">
-                3
-                </label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="q4Radio" id="q4Opt4" value="option4">
-                <label class="form-check-label" for="q4Opt4">
-                4
-                </label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="q4Radio" id="q4Opt5" value="option5">
-                <label class="form-check-label" for="q4Opt5">
-                5 - Very Important
-                </label>
-            </div>
+            <h5 class="question">Question 4: I like a game where I can beat the other players.</h5>
+            <select class="chosen-select" id="q4">
+                <option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select>
     </div>
 
     <div class="container" id="question5Container">
-        <h3 class="question">Question 5: It is important to me that the game takes place in a highly detailed setting or world. </h3>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="q5Radio" id="q5Opt1" value="option1">
-            <label class="form-check-label" for="q5Opt1">
-            1 - Not important
-            </label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="q5Radio" id="q5Opt2" value="option2">
-            <label class="form-check-label" for="q5Opt2">
-            2
-            </label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="q5Radio" id="q5Opt3" value="option3">
-            <label class="form-check-label" for="q5Opt3">
-            3
-            </label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="q5Radio" id="q5Opt4" value="option4">
-            <label class="form-check-label" for="q5Opt4">
-            4
-            </label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="q5Radio" id="q5Opt5" value="option5">
-            <label class="form-check-label" for="q5Opt5">
-            5 - Very Important
-            </label>
-        </div>
+        <h5 class="question">Question 5: It is important to me that the game takes place in a highly detailed setting or world. </h5>
+        <select class="chosen-select" id="q5">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
     </div>
 
+    <div class="container" id="question6Container">
+        <h5 class="question">Question 6: I like games with chance mechanics that determine the actions you have (ie. deck of cards)</h5>
+        <select class="chosen-select" id="q6">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+    </div>
+
+    <div class="container" id="question7Container">
+        <h5 class="question">Question 7: I like games where the players have to work cooperatively together.</h5>
+        <select class="chosen-select" id="q7">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+    </div>
+
+    <div class="container" id="question8Container">
+        <h5 class="question">Question 8: I like high conflict games, where players can interfer with each other's resources.</h5>
+        <select class="chosen-select" id="q8">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+    </div>
+
+    <div class="container" id="question9Container">
+        <h5 class="question">Question 9: I like party style games that allow for lots of player interaction.</h5>
+        <select class="chosen-select" id="q9">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+    </div>
+
+    <div class="container" id="question10Container">
+        <h5 class="question">Question 10: I want to playfames that have lots of complexity and strategic depth.</h5>
+        <select class="chosen-select" id="q10">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+    </div>
+
+<br>
+    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
+        Submit</button>
 </div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript">
+  $(".submit").on("click", function(event) {
+    event.preventDefault();
+
+     // Form validation for mandatory fields.
+     function validateForm() {
+        var isValid = true;
+        $(".form-control").each(function() {
+          if ($(this).val() === "") {
+            isValid = false;
+          }
+        });
+
+        // Form validation for the survey questions.
+        $(".chosen-select").each(function() {
+
+          if ($(this).val() === "") {
+            isValid = false;
+          }
+        });
+        return isValid;
+      }
+
+      // If all required fields are filled, store in buddyData variable.
+    if (validateForm()) {
+       var buddyData = {
+        name: $("#name").val(),
+        photo: $("#photo").val(),
+        scores: [
+            $("#q1").val(),
+            $("#q2").val(),
+            $("#q3").val(),
+            $("#q4").val(),
+            $("#q5").val(),
+            $("#q6").val(),
+            $("#q7").val(),
+            $("#q8").val(),
+            $("#q9").val(),
+            $("#q10").val()
+          ]
+       }
+       console.log(buddyData);
+    };
+
+    console.log(buddyData);
+    
+    var currentURL = window.location.origin;
+
+$.post(currentURL + "/api/friends", buddyData, function(data) {
+
+})
+  });
+</script>
 </body>
 </html>
