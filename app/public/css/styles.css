@@ -43,6 +43,7 @@ hr {
 .survey-container{
     background-color: var(--light-taupe);
     margin-top: 2rem;
+    margin-bottom: 2rem;
     padding: 1.5rem;
     font-family: var(--title-font);
 }
@@ -67,4 +68,28 @@ hr {
 .chosen-select {
     margin-bottom: 1.5rem;
     margin-top: 0.5rem;
+}
+
+.survey-title {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 6rem;
+}
+
+.form-control {
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+a {
+    color: var(--dark-ruby);
+}
+
+.btn-container {
+    width: 70%;
+    margin: 1rem auto;
+}
+
+.modal {
+    font-family: var(--body-font);
 }
